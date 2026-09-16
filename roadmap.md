@@ -1,8 +1,8 @@
 
-## Ambiente de testes independente (pedido 14/09/2026)
-- Criar projeto Supabase separado `NutriControl_teste` (ação manual do usuário: um projeto Lovable aponta para um único Supabase).
-- Clonar schema completo (tabelas, tipos, PK/FK, índices, constraints, defaults, triggers, funções, RLS).
-- Replicar bucket `progress-photos` e policies de Storage.
-- Copiar dados existentes quando possível (auth.users não é copiável entre projetos).
-- Apontar APENAS a versão de teste para as novas credenciais; oficial permanece intocada.
-- Relatório final com projetos, variáveis alteradas, URLs e o que não pôde ser clonado.
+## Ambiente de testes independente (concluído em 15/09/2026)
+- [x] Banco próprio criado para o NutriControl TESTE (Project ID diferente do oficial).
+- [x] Variáveis de ambiente do projeto TESTE apontando para o novo banco.
+- [x] Estrutura completa aplicada no TESTE (tabelas, tipos, chaves, índices, constraints, funções, triggers, RLS e policies).
+- [x] Armazenamento privado `progress-photos` criado com as permissões das fotos de evolução.
+- [ ] Copiar dados reais (opcional, não solicitado). Contas de login não são transferíveis entre bancos — precisam ser recriadas no TESTE.
+- Oficial permanece intocado.
